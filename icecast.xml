@@ -2,8 +2,8 @@
     <!-- location and admin are two arbitrary strings that are e.g. visible
          on the server info page of the icecast web interface
          (server_version.xsl). -->
-    <location>Santiago de Chile</location>
-    <admin>radiosativa@mananarecords.com</admin>
+    <location>Planet Earth</location>
+    <admin>admin@yourdomain.com</admin>
 
     <limits>
         <clients>80</clients>
@@ -34,7 +34,7 @@
 
         <!-- Admin logs in with the username given below -->
         <admin-user>admin</admin-user>
-        <admin-password>radiosativa</admin-password>
+        <admin-password>hackme</admin-password>
     </authentication>
 
     <!-- set the mountpoint for a shoutcast source to use, the default if not

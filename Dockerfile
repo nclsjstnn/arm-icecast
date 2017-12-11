@@ -1,5 +1,5 @@
 FROM resin/raspberrypi3-debian:jessie
-MAINTAINER @jstnn
+LABEL maintainer="n.justiniano@gmail.com"
 
 ARG user=icecast2
 ARG group=icecast
