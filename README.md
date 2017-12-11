@@ -1,6 +1,6 @@
 # arm-icecast
 
-This docker image runs the streaming application [Icecast](http://icecast.org/) using Debian. A [Resin.os Raspbian image](https://hub.docker.com/r/resin/rpi-raspbian/) is used as a base image for compatibility with IoT devices, but it works well anywhere, it's just a dockerfile. To use with MPD.
+This docker image runs the streaming application [Icecast](http://icecast.org/) using Debian. A [Resin.os Raspbian image](https://hub.docker.com/r/resin/rpi-raspbian/) is used as a base image for compatibility with IoT devices, but it works well anywhere, it's just a dockerfile.
 
 # How to use 
 
@@ -16,4 +16,4 @@ The passwords in the configuration are just for testing purposes.
 
 # Credits
 
-This dockerfile is based on the [alpine-icecast image](https://hub.docker.com/r/vitiman/alpine-icecast/). Changes has been made to compile with an IoT device with an ARMv7 architecture like the RaspberryPi 3
+This dockerfile is based on the [alpine-icecast image](https://hub.docker.com/r/vitiman/alpine-icecast/). Changes has been made to compile with an IoT device with an ARMv7 architecture like the RaspberryPi 3 using a resin.os optimized image.
