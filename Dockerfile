@@ -4,6 +4,7 @@ LABEL maintainer="n.justiniano@gmail.com"
 ARG user=icecast2
 ARG group=icecast
 
+RUN ln -sf /bin/bash /bin/sh
 RUN useradd -ms /bin/bash ${user} && groupadd ${group}
 
 RUN apt-get -qq -y update \
