@@ -1,6 +1,8 @@
 FROM resin/raspberrypi3-debian:jessie
 LABEL maintainer="n.justiniano@gmail.com"
 
+RUN [ "cross-build-start" ]
+
 ARG user=icecast2
 ARG group=icecast
 
@@ -18,5 +20,8 @@ RUN mkdir -p /var/log/icecast \
     && chown -R ${user}:${group} /usr/share/icecast2 \
     && chown -R ${user}:${group} /var/log/icecast
 
+RUN [ "cross-build-end" ] 
+
 USER ${user}
 CMD ["icecast2", "-c", "/usr/share/icecast2/icecast.xml"]
+
